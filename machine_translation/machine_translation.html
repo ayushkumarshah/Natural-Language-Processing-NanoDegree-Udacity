@@ -13457,7 +13457,7 @@ xlrd==1.1.0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tensorflow.python.client</span> <span class="k">import</span> <span class="n">device_lib</span>
@@ -13483,14 +13483,14 @@ device_type: &#34;CPU&#34;
 memory_limit: 268435456
 locality {
 }
-incarnation: 12453984668100105158
+incarnation: 17603941252719398866
 , name: &#34;/gpu:0&#34;
 device_type: &#34;GPU&#34;
 memory_limit: 357433344
 locality {
   bus_id: 1
 }
-incarnation: 15126686336952107538
+incarnation: 12674182588473420099
 physical_device_desc: &#34;device: 0, name: Tesla K80, pci bus id: 0000:00:04.0&#34;
 ]
 </pre>
@@ -13512,7 +13512,7 @@ physical_device_desc: &#34;device: 0, name: Tesla K80, pci bus id: 0000:00:04.0&
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load English data</span>
@@ -13556,7 +13556,7 @@ physical_device_desc: &#34;device: 0, name: Tesla K80, pci bus id: 0000:00:04.0&
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">sample_i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
@@ -13592,7 +13592,7 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># english_sentences</span>
@@ -13614,7 +13614,7 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">english_words_counter</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">([</span><span class="n">word</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">english_sentences</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()])</span>
@@ -13682,7 +13682,7 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">tokenize</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -13756,7 +13756,7 @@ Sequence 3 in x
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text_tokenized</span>
@@ -13772,7 +13772,7 @@ Sequence 3 in x
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13791,7 +13791,7 @@ Sequence 3 in x
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pad</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -13857,7 +13857,7 @@ Sequence 3 in x
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">preprocess</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
@@ -13939,7 +13939,7 @@ You will begin by training four relatively simple architectures.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">logits_to_text</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="n">tokenizer</span><span class="p">):</span>
@@ -13991,7 +13991,7 @@ A basic RNN model is a good baseline for sequence data.  In this model, you'll b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">simple_model</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
@@ -14007,51 +14007,16 @@ A basic RNN model is a good baseline for sequence data.  In this model, you'll b
     <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">1e-3</span>
     
     <span class="n">input_seq</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
-    <span class="n">rnn</span> <span class="o">=</span> <span class="n">GRU</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">)(</span><span class="n">input_seq</span><span class="p">)</span>
+    <span class="n">rnn</span> <span class="o">=</span> <span class="n">GRU</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">)(</span><span class="n">input_seq</span><span class="p">)</span>
     <span class="n">logits</span> <span class="o">=</span> <span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">))(</span><span class="n">rnn</span><span class="p">)</span>
     <span class="n">model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">input_seq</span><span class="p">,</span> <span class="n">Activation</span><span class="p">(</span><span class="s1">&#39;softmax&#39;</span><span class="p">)(</span><span class="n">logits</span><span class="p">))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="n">sparse_categorical_crossentropy</span><span class="p">,</span>
                   <span class="n">optimizer</span><span class="o">=</span><span class="n">Adam</span><span class="p">(</span><span class="n">learning_rate</span><span class="p">),</span>
                   <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
     <span class="k">return</span> <span class="n">model</span>
 <span class="n">tests</span><span class="o">.</span><span class="n">test_simple_model</span><span class="p">(</span><span class="n">simple_model</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Reshaping the input to work with a basic RNN</span>
-<span class="n">tmp_x</span> <span class="o">=</span> <span class="n">pad</span><span class="p">(</span><span class="n">preproc_english_sentences</span><span class="p">,</span> <span class="n">max_french_sequence_length</span><span class="p">)</span>
-<span class="n">tmp_x</span> <span class="o">=</span> <span class="n">tmp_x</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="mi">1</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Train the neural network</span>
-<span class="n">simple_rnn_model</span> <span class="o">=</span> <span class="n">simple_model</span><span class="p">(</span>
-    <span class="n">tmp_x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span>
-    <span class="n">max_french_sequence_length</span><span class="p">,</span>
-    <span class="n">english_vocab_size</span><span class="p">,</span>
-    <span class="n">french_vocab_size</span><span class="p">)</span>
-<span class="n">simple_rnn_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
-
-<span class="c1"># Print prediction(s)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">logits_to_text</span><span class="p">(</span><span class="n">simple_rnn_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">[:</span><span class="mi">1</span><span class="p">])[</span><span class="mi">0</span><span class="p">],</span> <span class="n">french_tokenizer</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -14068,28 +14033,22 @@ A basic RNN model is a good baseline for sequence data.  In this model, you'll b
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Train on 110288 samples, validate on 27573 samples
-Epoch 1/10
-110288/110288 [==============================] - 8s 70us/step - loss: 3.5101 - acc: 0.4079 - val_loss: 2.5901 - val_acc: 0.4528
-Epoch 2/10
-110288/110288 [==============================] - 7s 67us/step - loss: 2.4577 - acc: 0.4677 - val_loss: 2.3174 - val_acc: 0.4883
-Epoch 3/10
-110288/110288 [==============================] - 7s 67us/step - loss: 2.1927 - acc: 0.5105 - val_loss: 2.0736 - val_acc: 0.5333
-Epoch 4/10
-110288/110288 [==============================] - 7s 67us/step - loss: 1.9842 - acc: 0.5471 - val_loss: 1.8998 - val_acc: 0.5671
-Epoch 5/10
-110288/110288 [==============================] - 7s 67us/step - loss: 1.8376 - acc: 0.5736 - val_loss: 1.7783 - val_acc: 0.5807
-Epoch 6/10
-110288/110288 [==============================] - 7s 67us/step - loss: 1.7332 - acc: 0.5838 - val_loss: 1.6891 - val_acc: 0.5978
-Epoch 7/10
-110288/110288 [==============================] - 7s 67us/step - loss: 1.6513 - acc: 0.5930 - val_loss: 1.6128 - val_acc: 0.5909
-Epoch 8/10
-110288/110288 [==============================] - 7s 67us/step - loss: 1.5829 - acc: 0.5965 - val_loss: 1.5539 - val_acc: 0.5976
-Epoch 9/10
-110288/110288 [==============================] - 7s 67us/step - loss: 1.5312 - acc: 0.6004 - val_loss: 1.5076 - val_acc: 0.6053
-Epoch 10/10
-110288/110288 [==============================] - 7s 67us/step - loss: 1.4884 - acc: 0.6055 - val_loss: 1.4686 - val_acc: 0.6072
-new jersey est parfois parfois en en mais il est est en en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+<pre>_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_2 (InputLayer)         (None, 21, 1)             0         
+_________________________________________________________________
+gru_2 (GRU)                  (None, 21, 256)           198144    
+_________________________________________________________________
+time_distributed_2 (TimeDist (None, 21, 344)           88408     
+_________________________________________________________________
+activation_2 (Activation)    (None, 21, 344)           0         
+=================================================================
+Total params: 286,552
+Trainable params: 286,552
+Non-trainable params: 0
+_________________________________________________________________
+None
 </pre>
 </div>
 </div>
@@ -14100,10 +14059,30 @@ new jersey est parfois parfois en en mais il est est en en &lt;PAD&gt; &lt;PAD&g
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">simple_rnn_model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Reshaping the input to work with a basic RNN</span>
+<span class="n">tmp_x</span> <span class="o">=</span> <span class="n">pad</span><span class="p">(</span><span class="n">preproc_english_sentences</span><span class="p">,</span> <span class="n">max_french_sequence_length</span><span class="p">)</span>
+<span class="n">tmp_x</span> <span class="o">=</span> <span class="n">tmp_x</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="mi">1</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Train the neural network</span>
+<span class="n">simple_rnn_model</span> <span class="o">=</span> <span class="n">simple_model</span><span class="p">(</span>
+    <span class="n">tmp_x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span>
+    <span class="n">max_french_sequence_length</span><span class="p">,</span>
+    <span class="n">english_vocab_size</span><span class="p">,</span>
+    <span class="n">french_vocab_size</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14125,16 +14104,72 @@ Layer (type)                 Output Shape              Param #
 =================================================================
 input_3 (InputLayer)         (None, 21, 1)             0         
 _________________________________________________________________
-gru_3 (GRU)                  (None, 21, 64)            12672     
+gru_3 (GRU)                  (None, 21, 256)           198144    
 _________________________________________________________________
-time_distributed_3 (TimeDist (None, 21, 345)           22425     
+time_distributed_3 (TimeDist (None, 21, 345)           88665     
 _________________________________________________________________
 activation_3 (Activation)    (None, 21, 345)           0         
 =================================================================
-Total params: 35,097
-Trainable params: 35,097
+Total params: 286,809
+Trainable params: 286,809
 Non-trainable params: 0
 _________________________________________________________________
+None
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">simple_rnn_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+
+<span class="c1"># Print prediction(s)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">logits_to_text</span><span class="p">(</span><span class="n">simple_rnn_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">[:</span><span class="mi">1</span><span class="p">])[</span><span class="mi">0</span><span class="p">],</span> <span class="n">french_tokenizer</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Train on 110288 samples, validate on 27573 samples
+Epoch 1/10
+110288/110288 [==============================] - 13s 118us/step - loss: 2.5925 - acc: 0.4761 - val_loss: 1.8980 - val_acc: 0.5580
+Epoch 2/10
+110288/110288 [==============================] - 11s 99us/step - loss: 1.6551 - acc: 0.5841 - val_loss: 1.5106 - val_acc: 0.5994
+Epoch 3/10
+110288/110288 [==============================] - 11s 100us/step - loss: 1.4331 - acc: 0.6132 - val_loss: 1.3641 - val_acc: 0.6215
+Epoch 4/10
+110288/110288 [==============================] - 11s 100us/step - loss: 1.3124 - acc: 0.6309 - val_loss: 1.2590 - val_acc: 0.6413
+Epoch 5/10
+110288/110288 [==============================] - 11s 100us/step - loss: 1.2209 - acc: 0.6482 - val_loss: 1.1822 - val_acc: 0.6520
+Epoch 6/10
+110288/110288 [==============================] - 11s 100us/step - loss: 1.1531 - acc: 0.6589 - val_loss: 1.1229 - val_acc: 0.6658
+Epoch 7/10
+110288/110288 [==============================] - 11s 100us/step - loss: 1.1033 - acc: 0.6661 - val_loss: 1.0877 - val_acc: 0.6675
+Epoch 8/10
+110288/110288 [==============================] - 11s 100us/step - loss: 1.0633 - acc: 0.6720 - val_loss: 1.0465 - val_acc: 0.6809
+Epoch 9/10
+110288/110288 [==============================] - 11s 100us/step - loss: 1.0300 - acc: 0.6769 - val_loss: 1.0146 - val_acc: 0.6769
+Epoch 10/10
+110288/110288 [==============================] - 11s 100us/step - loss: 0.9992 - acc: 0.6815 - val_loss: 0.9890 - val_acc: 0.6836
+new jersey est parfois calme en l&#39; de mai et il est est en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
 </div>
@@ -14155,7 +14190,7 @@ You've turned the words into ids, but there's a better representation of a word.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[127]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">embed_model</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
@@ -14171,13 +14206,12 @@ You've turned the words into ids, but there's a better representation of a word.
     <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">1e-2</span>
     
     <span class="n">input_seq</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
-<span class="c1">#     import pdb; pdb.set_trace()</span>
     <span class="n">embed</span> <span class="o">=</span> <span class="n">Embedding</span><span class="p">(</span><span class="n">input_dim</span><span class="o">=</span><span class="n">english_vocab_size</span><span class="p">,</span> 
                       <span class="n">output_dim</span><span class="o">=</span><span class="mi">256</span><span class="p">,</span> 
                       <span class="n">input_length</span><span class="o">=</span><span class="n">output_sequence_length</span><span class="p">,</span>
                      <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:]))(</span><span class="n">input_seq</span><span class="p">)</span>
     
-    <span class="n">rnn</span> <span class="o">=</span> <span class="n">GRU</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">)(</span><span class="n">embed</span><span class="p">)</span>
+    <span class="n">rnn</span> <span class="o">=</span> <span class="n">GRU</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">)(</span><span class="n">embed</span><span class="p">)</span>
     
     <span class="n">logits</span> <span class="o">=</span> <span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">))(</span><span class="n">rnn</span><span class="p">)</span>
     
@@ -14197,7 +14231,7 @@ You've turned the words into ids, but there's a better representation of a word.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[92]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tests</span><span class="o">.</span><span class="n">test_embed_model</span><span class="p">(</span><span class="n">embed_model</span><span class="p">)</span>
@@ -14220,18 +14254,18 @@ You've turned the words into ids, but there's a better representation of a word.
 <pre>_________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-input_37 (InputLayer)        (None, 21)                0         
+input_4 (InputLayer)         (None, 21)                0         
 _________________________________________________________________
-embedding_31 (Embedding)     (None, 21, 256)           50944     
+embedding_1 (Embedding)      (None, 21, 256)           50944     
 _________________________________________________________________
-gru_36 (GRU)                 (None, 21, 64)            61632     
+gru_4 (GRU)                  (None, 21, 256)           393984    
 _________________________________________________________________
-time_distributed_28 (TimeDis (None, 21, 344)           22360     
+time_distributed_4 (TimeDist (None, 21, 344)           88408     
 _________________________________________________________________
-activation_28 (Activation)   (None, 21, 344)           0         
+activation_4 (Activation)    (None, 21, 344)           0         
 =================================================================
-Total params: 134,936
-Trainable params: 134,936
+Total params: 533,336
+Trainable params: 533,336
 Non-trainable params: 0
 _________________________________________________________________
 None
@@ -14245,25 +14279,13 @@ None
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Reshape the input</span>
 
 <span class="n">tmp_x</span> <span class="o">=</span> <span class="n">pad</span><span class="p">(</span><span class="n">preproc_english_sentences</span><span class="p">,</span> <span class="n">max_french_sequence_length</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[94]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tmp_x</span><span class="o">.</span><span class="n">shape</span>
+<span class="n">tmp_x</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
     </div>
@@ -14276,7 +14298,7 @@ None
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[94]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -14293,7 +14315,7 @@ None
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Train the neural network</span>
@@ -14320,18 +14342,18 @@ None
 <pre>_________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-input_38 (InputLayer)        (None, 21)                0         
+input_5 (InputLayer)         (None, 21)                0         
 _________________________________________________________________
-embedding_32 (Embedding)     (None, 21, 256)           51200     
+embedding_2 (Embedding)      (None, 21, 256)           51200     
 _________________________________________________________________
-gru_37 (GRU)                 (None, 21, 64)            61632     
+gru_5 (GRU)                  (None, 21, 256)           393984    
 _________________________________________________________________
-time_distributed_29 (TimeDis (None, 21, 345)           22425     
+time_distributed_5 (TimeDist (None, 21, 345)           88665     
 _________________________________________________________________
-activation_29 (Activation)   (None, 21, 345)           0         
+activation_5 (Activation)    (None, 21, 345)           0         
 =================================================================
-Total params: 135,257
-Trainable params: 135,257
+Total params: 533,849
+Trainable params: 533,849
 Non-trainable params: 0
 _________________________________________________________________
 None
@@ -14345,7 +14367,7 @@ None
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">embedding_rnn_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
@@ -14369,26 +14391,26 @@ None
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Train on 110288 samples, validate on 27573 samples
 Epoch 1/10
-110288/110288 [==============================] - 10s 91us/step - loss: 1.6009 - acc: 0.6477 - val_loss: 0.6770 - val_acc: 0.7942
+110288/110288 [==============================] - 14s 131us/step - loss: 1.3655 - acc: 0.6997 - val_loss: 0.4188 - val_acc: 0.8661
 Epoch 2/10
-110288/110288 [==============================] - 9s 81us/step - loss: 0.5343 - acc: 0.8351 - val_loss: 0.4365 - val_acc: 0.8617
+110288/110288 [==============================] - 14s 126us/step - loss: 0.3199 - acc: 0.8962 - val_loss: 0.2608 - val_acc: 0.9144
 Epoch 3/10
-110288/110288 [==============================] - 9s 81us/step - loss: 0.3857 - acc: 0.8799 - val_loss: 0.3457 - val_acc: 0.8914
+110288/110288 [==============================] - 14s 126us/step - loss: 0.2411 - acc: 0.9194 - val_loss: 0.2355 - val_acc: 0.9202
 Epoch 4/10
-110288/110288 [==============================] - 9s 81us/step - loss: 0.3282 - acc: 0.8966 - val_loss: 0.3159 - val_acc: 0.8998
+110288/110288 [==============================] - 14s 126us/step - loss: 0.2149 - acc: 0.9263 - val_loss: 0.2188 - val_acc: 0.9252
 Epoch 5/10
-110288/110288 [==============================] - 9s 81us/step - loss: 0.3002 - acc: 0.9045 - val_loss: 0.2949 - val_acc: 0.9056
+110288/110288 [==============================] - 14s 127us/step - loss: 0.2064 - acc: 0.9288 - val_loss: 0.2075 - val_acc: 0.9293
 Epoch 6/10
-110288/110288 [==============================] - 9s 81us/step - loss: 0.2804 - acc: 0.9099 - val_loss: 0.2750 - val_acc: 0.9125
+110288/110288 [==============================] - 14s 126us/step - loss: 0.1984 - acc: 0.9309 - val_loss: 0.2048 - val_acc: 0.9281
 Epoch 7/10
-110288/110288 [==============================] - 9s 81us/step - loss: 0.2670 - acc: 0.9139 - val_loss: 0.2692 - val_acc: 0.9145
+110288/110288 [==============================] - 14s 126us/step - loss: 0.1907 - acc: 0.9328 - val_loss: 0.1995 - val_acc: 0.9317
 Epoch 8/10
-110288/110288 [==============================] - 9s 81us/step - loss: 0.2586 - acc: 0.9161 - val_loss: 0.2645 - val_acc: 0.9149
+110288/110288 [==============================] - 14s 127us/step - loss: 0.1888 - acc: 0.9335 - val_loss: 0.2004 - val_acc: 0.9317
 Epoch 9/10
-110288/110288 [==============================] - 9s 81us/step - loss: 0.2512 - acc: 0.9182 - val_loss: 0.2526 - val_acc: 0.9187
+110288/110288 [==============================] - 14s 127us/step - loss: 0.1894 - acc: 0.9332 - val_loss: 0.2093 - val_acc: 0.9297
 Epoch 10/10
-110288/110288 [==============================] - 9s 81us/step - loss: 0.2489 - acc: 0.9189 - val_loss: 0.2503 - val_acc: 0.9192
-new jersey est parfois calme en l&#39; et l&#39; il est il avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+110288/110288 [==============================] - 14s 126us/step - loss: 0.1910 - acc: 0.9328 - val_loss: 0.2027 - val_acc: 0.9314
+new jersey est parfois calme en l&#39; hiver et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
 </div>
@@ -14408,7 +14430,7 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[97]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">bd_model</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
@@ -14425,7 +14447,7 @@ One restriction of a RNN is that it can't see the future input, only the past.  
     
     <span class="n">input_seq</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
     
-    <span class="n">rnn</span> <span class="o">=</span> <span class="n">Bidirectional</span><span class="p">(</span><span class="n">GRU</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">))(</span><span class="n">input_seq</span><span class="p">)</span>
+    <span class="n">rnn</span> <span class="o">=</span> <span class="n">Bidirectional</span><span class="p">(</span><span class="n">GRU</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">))(</span><span class="n">input_seq</span><span class="p">)</span>
     
     <span class="n">logits</span> <span class="o">=</span> <span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">))(</span><span class="n">rnn</span><span class="p">)</span>
     
@@ -14447,7 +14469,7 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tests</span><span class="o">.</span><span class="n">test_bd_model</span><span class="p">(</span><span class="n">bd_model</span><span class="p">)</span>
@@ -14470,16 +14492,16 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 <pre>_________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-input_39 (InputLayer)        (None, 21, 1)             0         
+input_6 (InputLayer)         (None, 21, 1)             0         
 _________________________________________________________________
-bidirectional_8 (Bidirection (None, 21, 128)           25344     
+bidirectional_1 (Bidirection (None, 21, 512)           396288    
 _________________________________________________________________
-time_distributed_30 (TimeDis (None, 21, 344)           44376     
+time_distributed_6 (TimeDist (None, 21, 344)           176472    
 _________________________________________________________________
-activation_30 (Activation)   (None, 21, 344)           0         
+activation_6 (Activation)    (None, 21, 344)           0         
 =================================================================
-Total params: 69,720
-Trainable params: 69,720
+Total params: 572,760
+Trainable params: 572,760
 Non-trainable params: 0
 _________________________________________________________________
 None
@@ -14493,7 +14515,7 @@ None
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Train and Print prediction(s)</span>
@@ -14508,7 +14530,7 @@ None
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bidirectional_rnn_model</span> <span class="o">=</span> <span class="n">bd_model</span><span class="p">(</span><span class="n">tmp_x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span>
@@ -14534,16 +14556,16 @@ None
 <pre>_________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-input_40 (InputLayer)        (None, 21, 1)             0         
+input_7 (InputLayer)         (None, 21, 1)             0         
 _________________________________________________________________
-bidirectional_9 (Bidirection (None, 21, 128)           25344     
+bidirectional_2 (Bidirection (None, 21, 512)           396288    
 _________________________________________________________________
-time_distributed_31 (TimeDis (None, 21, 345)           44505     
+time_distributed_7 (TimeDist (None, 21, 345)           176985    
 _________________________________________________________________
-activation_31 (Activation)   (None, 21, 345)           0         
+activation_7 (Activation)    (None, 21, 345)           0         
 =================================================================
-Total params: 69,849
-Trainable params: 69,849
+Total params: 573,273
+Trainable params: 573,273
 Non-trainable params: 0
 _________________________________________________________________
 None
@@ -14557,7 +14579,7 @@ None
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[101]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bidirectional_rnn_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
@@ -14579,38 +14601,38 @@ None
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Train on 110288 samples, validate on 27573 samples
 Epoch 1/10
-110288/110288 [==============================] - 12s 110us/step - loss: 1.8680 - acc: 0.5736 - val_loss: 1.3170 - val_acc: 0.6382
+110288/110288 [==============================] - 19s 172us/step - loss: 1.4669 - acc: 0.6205 - val_loss: 1.0812 - val_acc: 0.6709
 Epoch 2/10
-110288/110288 [==============================] - 11s 98us/step - loss: 1.2235 - acc: 0.6544 - val_loss: 1.1495 - val_acc: 0.6663
+110288/110288 [==============================] - 18s 166us/step - loss: 0.9826 - acc: 0.6890 - val_loss: 0.9204 - val_acc: 0.6939
 Epoch 3/10
-110288/110288 [==============================] - 11s 98us/step - loss: 1.1187 - acc: 0.6708 - val_loss: 1.1066 - val_acc: 0.6719
+110288/110288 [==============================] - 18s 167us/step - loss: 0.8693 - acc: 0.7066 - val_loss: 0.8158 - val_acc: 0.7184
 Epoch 4/10
-110288/110288 [==============================] - 11s 98us/step - loss: 1.0576 - acc: 0.6806 - val_loss: 1.0287 - val_acc: 0.6838
+110288/110288 [==============================] - 18s 166us/step - loss: 0.8044 - acc: 0.7206 - val_loss: 0.7960 - val_acc: 0.7182
 Epoch 5/10
-110288/110288 [==============================] - 11s 98us/step - loss: 1.0104 - acc: 0.6881 - val_loss: 0.9928 - val_acc: 0.6902
+110288/110288 [==============================] - 18s 166us/step - loss: 0.7632 - acc: 0.7310 - val_loss: 0.7491 - val_acc: 0.7393
 Epoch 6/10
-110288/110288 [==============================] - 11s 98us/step - loss: 0.9751 - acc: 0.6938 - val_loss: 0.9640 - val_acc: 0.6959
+110288/110288 [==============================] - 18s 166us/step - loss: 0.7108 - acc: 0.7521 - val_loss: 0.6978 - val_acc: 0.7559
 Epoch 7/10
-110288/110288 [==============================] - 11s 98us/step - loss: 0.9464 - acc: 0.7001 - val_loss: 0.9330 - val_acc: 0.7041
+110288/110288 [==============================] - 18s 166us/step - loss: 0.6929 - acc: 0.7524 - val_loss: 0.6810 - val_acc: 0.7545
 Epoch 8/10
-110288/110288 [==============================] - 11s 98us/step - loss: 0.9258 - acc: 0.7042 - val_loss: 0.9096 - val_acc: 0.7070
+110288/110288 [==============================] - 18s 166us/step - loss: 0.6488 - acc: 0.7713 - val_loss: 0.7142 - val_acc: 0.7617
 Epoch 9/10
-110288/110288 [==============================] - 11s 97us/step - loss: 0.9007 - acc: 0.7102 - val_loss: 0.8941 - val_acc: 0.7129
+110288/110288 [==============================] - 18s 166us/step - loss: 0.6252 - acc: 0.7814 - val_loss: 0.7617 - val_acc: 0.7363
 Epoch 10/10
-110288/110288 [==============================] - 11s 97us/step - loss: 0.8847 - acc: 0.7144 - val_loss: 0.8749 - val_acc: 0.7185
+110288/110288 [==============================] - 18s 166us/step - loss: 0.6251 - acc: 0.7837 - val_loss: 0.5510 - val_acc: 0.8198
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[101]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;keras.callbacks.History at 0x7f00f133a668&gt;</pre>
+<pre>&lt;keras.callbacks.History at 0x7f08418b97b8&gt;</pre>
 </div>
 
 </div>
@@ -14665,7 +14687,7 @@ Epoch 10/10
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[124]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">model_final</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
@@ -14687,7 +14709,7 @@ Epoch 10/10
                       <span class="n">input_length</span><span class="o">=</span><span class="n">output_sequence_length</span><span class="p">,</span>
                       <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:]))(</span><span class="n">input_seq</span><span class="p">)</span>
     
-    <span class="n">rnn</span> <span class="o">=</span> <span class="n">Bidirectional</span><span class="p">(</span><span class="n">GRU</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">))(</span><span class="n">embed</span><span class="p">)</span>
+    <span class="n">rnn</span> <span class="o">=</span> <span class="n">Bidirectional</span><span class="p">(</span><span class="n">GRU</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">))(</span><span class="n">embed</span><span class="p">)</span>
     
     <span class="n">logits</span> <span class="o">=</span> <span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">))(</span><span class="n">rnn</span><span class="p">)</span>
     
@@ -14708,7 +14730,7 @@ Epoch 10/10
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[125]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tests</span><span class="o">.</span><span class="n">test_model_final</span><span class="p">(</span><span class="n">model_final</span><span class="p">)</span>
@@ -14732,18 +14754,18 @@ Epoch 10/10
 <pre>_________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-input_53 (InputLayer)        (None, 15)                0         
+input_8 (InputLayer)         (None, 15)                0         
 _________________________________________________________________
-embedding_45 (Embedding)     (None, 21, 256)           50944     
+embedding_3 (Embedding)      (None, 21, 256)           50944     
 _________________________________________________________________
-bidirectional_22 (Bidirectio (None, 21, 128)           123264    
+bidirectional_3 (Bidirection (None, 21, 512)           787968    
 _________________________________________________________________
-time_distributed_44 (TimeDis (None, 21, 344)           44376     
+time_distributed_8 (TimeDist (None, 21, 344)           176472    
 _________________________________________________________________
-activation_44 (Activation)   (None, 21, 344)           0         
+activation_8 (Activation)    (None, 21, 344)           0         
 =================================================================
-Total params: 218,584
-Trainable params: 218,584
+Total params: 1,015,384
+Trainable params: 1,015,384
 Non-trainable params: 0
 _________________________________________________________________
 None
@@ -14765,7 +14787,7 @@ Final Model Loaded
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[128]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">final_predictions</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x_tk</span><span class="p">,</span> <span class="n">y_tk</span><span class="p">):</span>
@@ -14780,8 +14802,8 @@ Final Model Loaded
     <span class="n">x</span> <span class="o">=</span> <span class="n">pad</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
     <span class="n">model</span> <span class="o">=</span> <span class="n">model_final</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span>  
                         <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
-                        <span class="nb">len</span><span class="p">(</span><span class="n">x_tk</span><span class="o">.</span><span class="n">word_index</span><span class="p">),</span>
-                        <span class="nb">len</span><span class="p">(</span><span class="n">y_tk</span><span class="o">.</span><span class="n">word_index</span><span class="p">))</span>
+                        <span class="nb">len</span><span class="p">(</span><span class="n">x_tk</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span>
+                        <span class="nb">len</span><span class="p">(</span><span class="n">y_tk</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
 
     <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
     <span class="c1">## DON&#39;T EDIT ANYTHING BELOW THIS LINE</span>
@@ -14822,47 +14844,47 @@ Final Model Loaded
 <pre>_________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-input_55 (InputLayer)        (None, 21)                0         
+input_9 (InputLayer)         (None, 21)                0         
 _________________________________________________________________
-embedding_47 (Embedding)     (None, 21, 256)           50944     
+embedding_4 (Embedding)      (None, 21, 256)           51200     
 _________________________________________________________________
-bidirectional_24 (Bidirectio (None, 21, 128)           123264    
+bidirectional_4 (Bidirection (None, 21, 512)           787968    
 _________________________________________________________________
-time_distributed_46 (TimeDis (None, 21, 344)           44376     
+time_distributed_9 (TimeDist (None, 21, 345)           176985    
 _________________________________________________________________
-activation_46 (Activation)   (None, 21, 344)           0         
+activation_9 (Activation)    (None, 21, 345)           0         
 =================================================================
-Total params: 218,584
-Trainable params: 218,584
+Total params: 1,016,153
+Trainable params: 1,016,153
 Non-trainable params: 0
 _________________________________________________________________
 None
 Train on 110288 samples, validate on 27573 samples
 Epoch 1/10
-110288/110288 [==============================] - 16s 142us/step - loss: 1.3487 - acc: 0.6882 - val_loss: nan - val_acc: 0.8355
+110288/110288 [==============================] - 25s 226us/step - loss: 1.0716 - acc: 0.7620 - val_loss: 0.2676 - val_acc: 0.9167
 Epoch 2/10
-110288/110288 [==============================] - 14s 124us/step - loss: 0.3846 - acc: 0.8802 - val_loss: nan - val_acc: 0.9073
+110288/110288 [==============================] - 24s 219us/step - loss: 0.1882 - acc: 0.9418 - val_loss: 0.1488 - val_acc: 0.9539
 Epoch 3/10
-110288/110288 [==============================] - 14s 123us/step - loss: 0.2559 - acc: 0.9220 - val_loss: nan - val_acc: 0.9302
+110288/110288 [==============================] - 24s 219us/step - loss: 0.1186 - acc: 0.9634 - val_loss: 0.1114 - val_acc: 0.9666
 Epoch 4/10
-110288/110288 [==============================] - 14s 124us/step - loss: 0.2028 - acc: 0.9393 - val_loss: nan - val_acc: 0.9456
+110288/110288 [==============================] - 24s 219us/step - loss: 0.0931 - acc: 0.9711 - val_loss: 0.0975 - val_acc: 0.9706
 Epoch 5/10
-110288/110288 [==============================] - 14s 124us/step - loss: 0.1724 - acc: 0.9490 - val_loss: nan - val_acc: 0.9499
+110288/110288 [==============================] - 24s 219us/step - loss: 0.0851 - acc: 0.9737 - val_loss: 0.0982 - val_acc: 0.9710
 Epoch 6/10
-110288/110288 [==============================] - 14s 124us/step - loss: 0.1541 - acc: 0.9549 - val_loss: nan - val_acc: 0.9559
+110288/110288 [==============================] - 24s 221us/step - loss: 0.0787 - acc: 0.9756 - val_loss: 0.0903 - val_acc: 0.9732
 Epoch 7/10
-110288/110288 [==============================] - 14s 124us/step - loss: 0.1432 - acc: 0.9581 - val_loss: nan - val_acc: 0.9580
+110288/110288 [==============================] - 24s 219us/step - loss: 0.0743 - acc: 0.9770 - val_loss: 0.0941 - val_acc: 0.9723
 Epoch 8/10
-110288/110288 [==============================] - 14s 124us/step - loss: 0.1301 - acc: 0.9621 - val_loss: nan - val_acc: 0.9605
+110288/110288 [==============================] - 24s 220us/step - loss: 0.0786 - acc: 0.9758 - val_loss: 0.1053 - val_acc: 0.9701
 Epoch 9/10
-110288/110288 [==============================] - 14s 123us/step - loss: 0.1259 - acc: 0.9631 - val_loss: nan - val_acc: 0.9610
+110288/110288 [==============================] - 24s 218us/step - loss: 0.0866 - acc: 0.9737 - val_loss: 0.1057 - val_acc: 0.9690
 Epoch 10/10
-110288/110288 [==============================] - 14s 124us/step - loss: 0.1240 - acc: 0.9635 - val_loss: nan - val_acc: 0.9629
+110288/110288 [==============================] - 24s 222us/step - loss: 0.0954 - acc: 0.9711 - val_loss: 0.1241 - val_acc: 0.9651
 Sample 1:
-il a vu un vieux camion jaune &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+il a vu un camion camion jaune &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 Il a vu un vieux camion jaune
 Sample 2:
-new jersey est parfois calme au l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 </pre>
 </div>
@@ -14917,7 +14939,7 @@ $ python -m nbconvert machine_translation.ipynb</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[129]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Save before you run this cell!</span>
@@ -14934,14 +14956,14 @@ $ python -m nbconvert machine_translation.ipynb</code></pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[129]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
 <pre>[&#39;[NbConvertApp] Converting notebook machine_translation.ipynb to html&#39;,
- &#39;[NbConvertApp] Writing 376240 bytes to machine_translation.html&#39;,
+ &#39;[NbConvertApp] Writing 377435 bytes to machine_translation.html&#39;,
  &#39;[NbConvertApp] Converting notebook machine_translation-zh.ipynb to html&#39;,
  &#39;[NbConvertApp] Writing 328614 bytes to machine_translation-zh.html&#39;]</pre>
 </div>
