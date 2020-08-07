@@ -1,6 +1,6 @@
 # Natural-Language-Processing-NanoDegree-Udacity
 
-This repository contains the course materials and projects that I submitted during the completion of the [Naturl Language Processing Nano Degree](https://www.udacity.com/course/natural-language-processing-nanodegree--nd892)
+This repository contains the course materials and projects that I submitted during the completion of the [Natural Language Processing Nano Degree](https://www.udacity.com/course/natural-language-processing-nanodegree--nd892)
 provided by [Udacity](https://www.udacity.com/).
 
 ## Projects
